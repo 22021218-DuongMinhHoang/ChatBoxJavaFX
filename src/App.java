@@ -10,7 +10,7 @@ public class App extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(App.class.getResource("ChatBox.fxml"));
         Scene scene = new Scene(root);
-
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.setTitle("Chat Box");
         stage.show();
